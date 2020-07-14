@@ -42,7 +42,7 @@ function rechnen() {
             ESt = 0.45 * (zvE - 17078.74)
             
         }
-        document.getElementById('ESt').innerHTML = ESt
+        
     }
     if (year == 2019) {
         console.log(year)
@@ -68,7 +68,7 @@ function rechnen() {
         } else if (zvE >= 265327) {
             ESt = 0.45 * (zvE - 16740.68)
         }
-        document.getElementById('ESt').innerHTML = ESt
+        
     }
     if (year == 2018) {
         console.log(year)
@@ -94,7 +94,12 @@ function rechnen() {
         } else if (zvE >= 260533) {
             ESt = 0.45 * (zvE - 16437.70)
         }
-        document.getElementById('ESt').innerHTML = ESt
+        
+        
     }
-
+    if (person1.checked) {
+        document.getElementById('ESt').innerHTML = ESt.toFixed(2);
+    } else if (person2.checked) {
+        document.getElementById('ESt').innerHTML = (ESt * 2).toFixed(2);
+    }
 }
