@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="zvE">
+        <h3>zu versteuerndes Einkommen (zvE):</h3>
+        <input type="text" name="" id="zvEinkommen1" placeholder="Person 1">Euro
+        <input type="text" name="" id="zvEinkommen2" placeholder="Person 2">Euro
+    </div>
+    <div id="Person">
+        <h3>Personen:</h3>
+        <form action="">
+            <label for="">Single</label>
+            <input type="radio" name="Person" id="p1" value="single" checked>
+            <label for="">Married</label>
+            <input type="radio" name="Person" id="p2" value="married">
+        </form>
+    </div>
+    <div id="Jahr">
+        <form action="">
+            <label for="">Berechnungsjahr:</label>
+            <select name="" id="year">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </form>
+    </div>
+    <input type="button" value="berechnen" onclick="rechnen()">
+    <p id="ESt">ESt:</p>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
