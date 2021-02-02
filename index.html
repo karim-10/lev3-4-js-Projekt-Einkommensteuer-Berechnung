@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Einkommensteuer Berechnung</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="zvE">
-        <h3>zu versteuerndes Einkommen (zvE):</h3>
-        <input type="text" name="" id="zvEinkommen1" placeholder="Person 1">Euro
-        <input type="text" name="" id="zvEinkommen2" placeholder="Person 2">Euro
-    </div>
+    <section class="hero">
+        <article id="zvE">
+            <div >
+             <h1>Zu versteuerndes Einkommen (zvE)</h1>
+             <label for="">Einkommen Person 1</label>
+            <input type="text" name="" size="30" id="zvEinkommen1" placeholder="Person 1"> € 
+             <br>
+             <label for="">Einkommen Person 2</label>
+             <input type="text" name="" size="30" id="zvEinkommen2" placeholder="Person 2"> €
+        </div>
+    </article>
     <div id="Person">
-        <h3>Personen:</h3>
+        <h3>Personen: </h3>
         <form action="">
             <label for="">Single</label>
             <input type="radio" name="Person" id="p1" value="single" checked>
@@ -33,9 +39,9 @@
             </select>
         </form>
     </div>
-    <input type="button" value="berechnen" onclick="rechnen()">
+    <input type="button" value="Berechnen" onclick="rechnen()">
     <p id="ESt">ESt:</p>
-    
+    </section>
     <script src="main.js"></script>
 </body>
 

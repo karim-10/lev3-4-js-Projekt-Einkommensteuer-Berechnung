@@ -1,19 +1,45 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 10px double black;
-    width: 60%;
+body {
+  background-color: black;
+  font-family: Tahoma;
 }
-#Jahr{
-   display: flex;
+h1 {
+  text-align: center;
+  font-size: 1.5em;
 }
-#zvE,#Person{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  height: 60vh;
+  background-color: lightgray;
+  flex-direction: column;
+  border: 5px solid rgb(172, 144, 107);
+  border-radius: 30px;
+  width: 600px;
+  font-family: Tahoma;
 }
-input{
-    margin-top: 5px;
+#Jahr select {
+  width: 250px;
+}
+#zvE {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Person {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 450px;
+}
+
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: darkblue;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  margin: 30px 0 0 0;
 }
